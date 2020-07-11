@@ -19,6 +19,11 @@ Encore
         to: 'favicon/[path][name].[ext]',
     })
 
+    .copyFiles({
+        from: './assets/images',
+        to: 'images/[path][name].[ext]',
+    })
+
     /*
      * ENTRY CONFIG
      *
