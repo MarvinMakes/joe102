@@ -11,4 +11,18 @@ import '../css/app.css';
 // Need jQuery? Install it with "yarn add jquery", then uncomment to import it.
 // import $ from 'jquery';
 
-console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
+class ClaimChanger {
+    constructor() {
+        this.claims = document.getElementsByClassName('claim');
+        this.activeClaim = 0;
+        
+        setInterval(() => {
+            this.claims[this.activeClaim].classList.remove('active');
+            const nextClaim = (this.activeClaim + 1) % this.claims.length;
+            this.claims[nextClaim].classList.add('active');
+            this.activeClaim = nextClaim;
+        }, 5000);        
+    }
+}
+
+new ClaimChanger();

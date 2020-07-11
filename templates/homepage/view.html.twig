@@ -1,10 +1,15 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+<div class="homepage background">
+</div>
 <div class="homepage">
     <div class="slogan">
         <span>{{ 'app.homepage.slogan'|trans }}</span>
-        <span>Wunderbar</span>
+        {% set claims = 'app.homepage.claims'|trans|split('|') %}
+        {% for claim in claims %}
+            <span class="claim {{ loop.first ? 'active' : '' }}">{{ claim }}!</span>
+        {% endfor %}
     </div>
 </div>
 {% endblock %}

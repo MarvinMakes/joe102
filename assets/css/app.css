@@ -1,24 +1,96 @@
 body {
+    margin: 0;
     background-color: black;
     font-family: 'Parisienne', cursive;
     color: white;
+    text-shadow: 3px 3px 4px black;
+}
+
+a {
+    color: white;
+}
+
+.header {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.header .content {
+    border-bottom: 1px white solid;
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.lang {
+    margin-right: 20px;
+}
+
+.lang a {
+    border-right: 1px white solid;
+    padding: 0 10px;
+    text-transform: uppercase;
+}
+
+.lang a:last-child {
+    border-right: none;
+    padding-right: 0;
 }
 
 .homepage {
     width: 100%;
     height: 100vh;
 
+    position: absolute;
+
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
-    background-image: url('/build/images/wallpaper.jpg');
+.background {
+    background-image: url('/build/images/cafe.jpg');
     background-size: cover;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    z-index: -1;
 }
 
 .slogan {
+    font-family: 'Parisienne', cursive;
     display: flex;
     justify-content: center;
     flex-direction: column;
     font-size: 4rem;
 }
+
+.slogan .claim {
+    display: none;
+    position: relative;
+}
+
+.slogan .claim.active {
+    display: unset;
+    animation: fadeInFadeOut 5s ease-in-out infinite;
+}
+
+@keyframes fadeInFadeOut {
+    0% { 
+        opacity: 0; 
+        top: 20px; 
+    }
+    10% { 
+        opacity: 1; 
+        top: 0; 
+    }
+    90% { 
+        opacity: 1; 
+        top: 0; 
+    }
+    100% { 
+        opacity: 0; 
+        top: -20px; 
+    }
+  }
