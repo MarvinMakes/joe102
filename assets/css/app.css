@@ -113,5 +113,6 @@ width: 100%;
 }
 
 .footer .content a {
+    margin-right: 10px;
     text-decoration: none;
 }
