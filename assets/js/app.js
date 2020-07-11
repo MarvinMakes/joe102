@@ -15,6 +15,8 @@ class ClaimChanger {
     constructor() {
         this.claims = document.getElementsByClassName('claim');
         this.activeClaim = 0;
+
+        this.claims[this.activeClaim].classList.add('active');
         
         setInterval(() => {
             this.claims[this.activeClaim].classList.remove('active');

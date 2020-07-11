@@ -21,7 +21,11 @@ a {
     border-bottom: 1px white solid;
     padding: 10px 0;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+}
+
+.nav {
+    margin-left: 10px;
 }
 
 .lang {

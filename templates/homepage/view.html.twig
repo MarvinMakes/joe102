@@ -8,7 +8,7 @@
         <span>{{ 'app.homepage.slogan'|trans }}</span>
         {% set claims = 'app.homepage.claims'|trans|split('|') %}
         {% for claim in claims %}
-            <span class="claim {{ loop.first ? 'active' : '' }}">{{ claim }}!</span>
+            <span class="claim">{{ claim }}!</span>
         {% endfor %}
     </div>
 </div>
