@@ -98,3 +98,20 @@ a {
         top: -20px; 
     }
   }
+
+.footer {
+z-index: 100;
+position: fixed;
+bottom: 0;
+width: 100%;
+}
+
+.footer .content {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0;
+}
+
+.footer .content a {
+    text-decoration: none;
+}

@@ -2,3 +2,5 @@ app:
   homepage:
     slogan: 'Joe102 is...'
     claims: 'wondeful|cozy|beautiful'
+  footer:
+    image: 'Image'

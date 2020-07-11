@@ -2,6 +2,7 @@
   "build/app.css": "/build/app.css",
   "build/app.js": "/build/app.js",
   "build/runtime.js": "/build/runtime.js",
+  "build/vendors~app.js": "/build/vendors~app.js",
   "build/favicon/android-chrome-192x192.png": "/build/favicon/android-chrome-192x192.png",
   "build/favicon/android-chrome-512x512.png": "/build/favicon/android-chrome-512x512.png",
   "build/favicon/apple-touch-icon.png": "/build/favicon/apple-touch-icon.png",
@@ -9,6 +10,5 @@
   "build/favicon/favicon-32x32.png": "/build/favicon/favicon-32x32.png",
   "build/favicon/favicon.ico": "/build/favicon/favicon.ico",
   "build/favicon/site.webmanifest": "/build/favicon/site.webmanifest",
-  "build/images/cafe.jpg": "/build/images/cafe.jpg",
-  "build/vendors~app.js": "/build/vendors~app.js"
+  "build/images/cafe.jpg": "/build/images/cafe.jpg"
 }
