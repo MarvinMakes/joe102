@@ -1,0 +1,4 @@
+#!/bin/bash
+
+git pull -f origin master
+bin/console c:c
